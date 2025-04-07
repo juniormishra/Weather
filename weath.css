@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+[data-theme="light"] {
+    --bg: #ffffff;
+    --text: #111111;
+}
+
+[data-theme="dark"] {
+    --bg: #111111;
+    --text: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.search-section input {
+    padding: 10px;
+    font-size: 16px;
+    width: 60%;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.unit-toggle button {
+    padding: 5px 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.unit-toggle .active {
+    background-color: #007bff;
+    color: white;
+}
+
+.forecast-cards {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.hourly-card, .weekly-card {
+    flex: 0 0 auto;
+    background: #eee;
+    padding: 10px;
+    border-radius: 8px;
+    min-width: 100px;
+}
+
+.scroll-btn {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.history button {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
